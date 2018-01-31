@@ -1,14 +1,17 @@
-<div class="col-xs-12">
+<div [hidden]="!productTypeListVisible" class="col-xs-12">
+    <h4>Select Product Type:</h4>
+    <select style="width: 100%; height: 40px; font-size: 18px;" [(ngModel)]="selectedProductType">
+        <option *ngFor="let type of productTypes" value= {{type}}>{{type}}</option>
+    </select>
 
+    <button class="btn btn-primary btn-block" (click)="hideProductTypeList()" style="margin-top: 30px;">Next</button>
 </div>
 
-<div [hidden]="showProductsList" class="col-xs-12">
+<div [hidden]="productTypeListVisible || showProductsList" class="col-xs-12">
     <app-taxons [taxonomies]="taxonomies$ | async" (onFilterComplete)="showProducts()"></app-taxons>
 </div>
 
-<div [hidden]="!showProductsList" class="col-xs-12">
-    <app-content [products]="products$ | async" 
-        [filters]="selectedFilters$ | async"
-        (onProductViewComplete)="hideProducts()">
+<div [hidden]="productTypeListVisible || !showProductsList" class="col-xs-12">
+    <app-content [products]="products$ | async" [filters]="selectedFilters$ | async" (onProductViewComplete)="hideProducts()">
     </app-content>
 </div>
