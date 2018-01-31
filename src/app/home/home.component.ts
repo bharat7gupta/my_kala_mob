@@ -33,7 +33,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() { 
-    this.http.get("/on15x")
+    // this.http.get("/on15x")
+    this.http.get("/products/productTypes")
       .subscribe((data) => {
         this.productTypes = data.json();
         this.selectedProductType = this.productTypes[0];

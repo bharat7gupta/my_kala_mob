@@ -46,8 +46,8 @@ export class ProductService {
    * @memberof ProductService
    */
   getProducts(productType: string): any { // https://api.myjson.com/bins/nvgsx
-    return this.http.get(`/qfbz9`)
-    // return this.http.get(`/products/partial/search?category=${productType}`)
+    // return this.http.get(`/qfbz9`)
+    return this.http.get(`/products/partial/search/${productType}`)
     .map(res => res.json());
   }
 }

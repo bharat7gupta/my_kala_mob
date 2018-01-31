@@ -21,9 +21,9 @@
 
   <div *ngIf="taxonomies.length!==0" class="text-center" style="margin-top: 30px;">
     <div class="btn-group btn-group-justified">
-      <div class="btn-group">
+      <!-- <div class="btn-group">
         <button class="btn btn-default" (click)="previousTaxonomy()" [disabled]="currentTaxonomyIndex===0">Back</button>
-      </div>
+      </div> -->
       <div class="btn-group" *ngIf="currentTaxonomyIndex!==taxonomies.length-1">
         <button class="btn btn-primary" (click)="nextTaxonomy()">Next</button>
       </div>
