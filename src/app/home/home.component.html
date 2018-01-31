@@ -1,0 +1,14 @@
+<div class="col-xs-12">
+
+</div>
+
+<div [hidden]="showProductsList" class="col-xs-12">
+    <app-taxons [taxonomies]="taxonomies$ | async" (onFilterComplete)="showProducts()"></app-taxons>
+</div>
+
+<div [hidden]="!showProductsList" class="col-xs-12">
+    <app-content [products]="products$ | async" 
+        [filters]="selectedFilters$ | async"
+        (onProductViewComplete)="hideProducts()">
+    </app-content>
+</div>

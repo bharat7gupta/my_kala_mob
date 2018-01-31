@@ -1,5 +1,4 @@
 .heading {
-  text-transform: uppercase;
   font-weight: 900;
   padding: 5px 22px 5px 2px;
   color: #282c3f;
@@ -7,15 +6,21 @@
 .filter-box {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #e9e9ed;
   position: relative;
   ul.taxonomy {
     margin-left: -37px;
+    margin-bottom: 20px;
     list-style: none;
     li.filter {
       font-size: 14px;
       margin-bottom: 7px;
       font-size: 18px;
+      text-transform: capitalize;
+      span.taxon-count {
+        color: #8d8e94;
+        font-weight: normal;
+        font-size: 14px;
+      }
       label.vertical-filters-label {
         display: block;
         font-size: 16px;

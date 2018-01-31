@@ -1,10 +1,14 @@
-<div class="content">
-  <div itemprop="name" class="queried-for">
-    <h4 title="men casual shirts" class="q">Displaying available products</h4>
-    <span>&nbsp;</span>
+<div>
+  <div itemprop="name" class="queried-for" style="margin-bottom: 20px;">
+    <h4 class="q">
+      Displaying available products
+      <div class="pull-right">
+        <button class="btn btn-default" (click)="hideProducts()">Back</button>
+      </div>
+    </h4>
   </div>
 
-  <div class="options">
+  <!-- <div class="options">
     <ul class="img-size">
       <label>View:</label>
       <li (click)="toggleView('COMPACT')" [ngClass]="{'big': true, 'selected': isBigSelected()}"></li>
@@ -20,5 +24,5 @@
         <li data-sortkey=":high">High</li>
       </label>
     </ul>
-  </div>
+  </div> -->
 </div>

@@ -7,6 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ContentHeaderComponent implements OnInit {
   @Output() toggleSize = new EventEmitter();
+  @Output() onProductViewComplete = new EventEmitter();
   selectedSize: string = 'COZY';
 
   constructor() { }
@@ -27,4 +28,7 @@ export class ContentHeaderComponent implements OnInit {
     return this.selectedSize === 'COMPACT';
   }
 
+  hideProducts() {
+    this.onProductViewComplete.emit();
+  }
 }

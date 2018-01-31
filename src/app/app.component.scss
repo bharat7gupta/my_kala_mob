@@ -1,3 +1,12 @@
 main {
-  padding-top: 90px;
+  margin: 20px auto;
+  width: 400px;
+  height: 500px;
+  overflow: auto;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+}
+
+main .content {
+  padding-top: 10px;
 }

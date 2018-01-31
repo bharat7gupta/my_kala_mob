@@ -1,0 +1,93 @@
+{
+    "products": [
+        {
+            "id": "102",
+            "place": "Electronics",
+            "category": "TV and Home Theater",
+            "type": "TV's",
+            "attributes": {
+                "Brand": "LG",
+                "Display Technology": "LED TVs",
+                "Price": 400,
+                "Technology": "Smart",
+                "Size": 46,
+                "Screen Type": "Flat",
+                "Resolution": "1080"
+            },
+            "code": null
+        },
+        {
+            "id": "100",
+            "place": "Electronics",
+            "category": "TV and Home Theater",
+            "type": "TV's",
+            "attributes": {
+                "Brand": "Samsung",
+                "Display Technology": "LCD TVs",
+                "Price": 300,
+                "Technology": "Smart",
+                "Size": 28,
+                "Screen Type": "Flat",
+                "Resolution": "1080"
+            },
+            "code": null
+        },
+        {
+            "id": "101",
+            "place": "Electronics",
+            "category": "TV and Home Theater",
+            "type": "TV's",
+            "attributes": {
+                "Brand": "LG",
+                "Display Technology": "Plasma TVs",
+                "Price": 350,
+                "Technology": "Energy Star",
+                "Size": 28,
+                "Screen Type": "Curved",
+                "Resolution": "2040"
+            },
+            "code": null
+        }
+    ],
+    "attributes": {
+        "Brand": {
+            "LG": 2,
+            "Samsung": 1
+        },
+        "Display Technology": {
+            "LCD TVs": 1,
+            "Plasma TVs": 1,
+            "LED TVs": 1
+        },
+        "Price": {
+            "300": 1,
+            "350": 1,
+            "400": 1
+        },
+        "Technology": {
+            "Energy Star": 1,
+            "Smart": 2
+        },
+        "Size": {
+            "28": 2,
+            "46": 1
+        },
+        "Screen Type": {
+            "Flat": 2,
+            "Curved": 1
+        },
+        "Resolution": {
+            "1080": 2,
+            "2040": 1
+        }
+    },
+    "order": {
+        "Brand": 5,
+        "Display Technology": 1,
+        "Price": 6,
+        "Technology": 7,
+        "Size": 2,
+        "Screen Type": 3,
+        "Resolution": 4
+    }
+}
